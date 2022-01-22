@@ -1,7 +1,7 @@
 {
   "name": "tweetprose",
   "description": "Create tweetable strings from prose (paragraphs, sentences, long words, urls, etc)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": "Joe Flateau",
   "main": "dist/index.js",
