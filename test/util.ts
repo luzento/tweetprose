@@ -1,4 +1,4 @@
-import { SplitOptions, splitProse } from '../src';
+import { SplitOptions, splitProse } from '../src/index';
 import { Spanned } from '../src/Spanned';
 
 export function assertSplitProse(
