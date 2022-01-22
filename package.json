@@ -14,6 +14,13 @@
   "repository": {
     "url": "https://github.com/luzento/tweetprose"
   },
+  "keywords": [
+    "twitter",
+    "tweet",
+    "split",
+    "prose",
+    "tweetstorm"
+  ],
   "scripts": {
     "analyze": "size-limit --why",
     "build": "dts build",
