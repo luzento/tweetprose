@@ -2,9 +2,9 @@ import { Spanned } from './Spanned';
 
 export function splitProse(
   text: string,
-  { maxLength = 280, countLinksAs = 23 }: Partial<SplitOptions> = {}
+  { maxLength = 280, countUrlsAs = 23 }: Partial<SplitOptions> = {}
 ): string[] {
-  const options = { maxLength, countLinksAs };
+  const options = { maxLength, countUrlsAs };
   const paragraphs = text
     .trim()
     .split(/\n\s*\n/)
@@ -78,6 +78,6 @@ export function splitLongSentence(
 }
 
 export type SplitOptions = {
-  countLinksAs: number | 'actual';
+  countUrlsAs: number | 'actual';
   maxLength: number;
 };

@@ -23,9 +23,9 @@ export class Spanned {
         {
           value: matchedValue,
           length:
-            options.countLinksAs === 'actual'
+            options.countUrlsAs === 'actual'
               ? matchedValue.length
-              : options.countLinksAs,
+              : options.countUrlsAs,
         }
       );
 
