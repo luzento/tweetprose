@@ -1,5 +1,6 @@
 {
-  "name": "tweetsplitter",
+  "name": "tweetprose",
+  "description": "Create tweetable strings from prose (paragraphs, sentences, long words, urls, etc)",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Joe Flateau",
@@ -10,6 +11,9 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/luzento/tweetprose"
+  },
   "scripts": {
     "analyze": "size-limit --why",
     "build": "dts build",
