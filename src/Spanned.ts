@@ -1,6 +1,13 @@
 import { SplitOptions } from './index';
 
-const urlRegex = /\w+\:\/\/[^ ]+/;
+const protoRegex = `[a-z]+:\\/\\/`;
+const domainRegex = `[a-z][a-z0-9]+(\\.[a-z]+)+`;
+const pathAndQueryRegex = `\\/[^ ]+`;
+
+const urlRegex = new RegExp(
+  `(${protoRegex})?${domainRegex}(${pathAndQueryRegex})?`,
+  'i'
+);
 
 export class Spanned {
   static parse(value: string, options: SplitOptions) {
